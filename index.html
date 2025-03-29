@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Listado de Tareas</title>
   <link rel="stylesheet" href="/src/css/style.css">
-  <script type="module" src="/src/main.ts" defer></script>
+  <script type="module" src="/src/main.ts" defer></script>          <!-- script / defer:para que se ejecute despues de cargar el html -->
 </head>
 
 <body>
@@ -22,8 +22,10 @@
 
       <form class="newItemEntry__form" id="itemEntryForm">
         <label for="newItem" class="offscreen">Ingresar una nueva tarea en la lista</label>
+        
         <input class="newItemEntry__input" id="newItem" type="text" maxlength="40" autocomplete="off"
           placeholder="Añadir tarea" />
+
         <button id="addItem" class="button newItemEntry__button" title="Add new item" aria-label="Add new item to list">
         +
         </button>
