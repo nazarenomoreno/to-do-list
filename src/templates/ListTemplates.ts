@@ -28,7 +28,7 @@ export default class ListTemplate implements DOMList{
             const li = document.createElement("li") as HTMLElement
             li.className = "item"
 
-            const check = document.querySelector("input") as HTMLInputElement
+            const check = document.createElement("input") as HTMLInputElement
             check.type = "checkbox"
             check.id = item.id
             check.tabIndex = 0
@@ -45,7 +45,7 @@ export default class ListTemplate implements DOMList{
             label.textContent = item.item
             li.append(label)
 
-            const button = document.createElement("buton") as HTMLButtonElement
+            const button = document.createElement("button") as HTMLButtonElement
             button.className = 'button'
             button.textContent = 'X'
             li.append(button)
